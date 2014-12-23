@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\exploitation">
+      <UniqueIdentifier>{a7e14861-618b-4bac-b0af-0b3bae9dabcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CVE">
+      <UniqueIdentifier>{277f1b2e-8b76-4e8f-9fc0-f0f0097b8bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{c8a09fe9-3dff-481e-a1df-aad71c91d96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\exploitation\kernel">
+      <UniqueIdentifier>{7ef63976-825c-499e-8828-060cf78a8d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\exploitation\user">
+      <UniqueIdentifier>{4aba589d-ca06-4e49-900b-13be43cd8784}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exploitation\exploit.cpp">
+      <Filter>Source Files\exploitation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exploitation\Gate.cpp">
+      <Filter>Source Files\exploitation\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exploitation\Door.cpp">
+      <Filter>Source Files\exploitation\user</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\exploitation\kernelinfo.hpp">
+      <Filter>Source Files\exploitation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\exploitation\exploit.h">
+      <Filter>Source Files\exploitation</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
